@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="56e81e83-de8c-4417-b315-50db678aa1ee">
+   <signature appVersion="3.1.2" lastUpdatedOn="25/09/2018 20:54:18 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/DBToExcel_where.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/Test.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1462606572" elementPath="/root/ProviderCode/">
+         <dmlExpression><![CDATA[this\ProviderCode]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="479227928" elementPath="/root/">
+         <dmlExpression><![CDATA[for each in:\Root]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

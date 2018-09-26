@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseMap xmlns="http://www.axway.com/mappingServices/databaseMap" databaseHost="10.151.14.55" type="SELECT" databasePort="1521" databaseName="10.151.14.55:1521:orcl" databaseType="Oracle" id="2df2fca0-71c9-474a-836d-e96690320907">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 17:39:45 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/XML_Export_Resultset.bdoc" alias="out"/>
+   <expression><![CDATA[select "RECONCILIATION_REPORT"."PROVIDER_CODE",
+	"RECONCILIATION_REPORT"."PROVIDER_NAME",
+	"RECONCILIATION_REPORT"."INVOICE_NUMBER",
+	"RECONCILIATION_REPORT"."INVOICE_DATE",
+	"RECONCILIATION_REPORT"."LOG_NUMBER",
+	"RECONCILIATION_REPORT"."AIA_DIAGNOSIS_CODE",
+	"RECONCILIATION_REPORT"."BILLING_ITEM_GROUPING_CODE",
+	"RECONCILIATION_REPORT"."PAYABLE_AMOUNT"
+from "RECONCILIATION_REPORT" 
+where "RECONCILIATION_REPORT"."PROVIDER_CODE" = #ProviderCode# and "RECONCILIATION_REPORT"."OVERALL_STATUS" = #OverallStatus#]]></expression>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/XML_Export_where.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mappings>
+      <mapping endPosition="512">
+         <outputMapElements>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="PROVIDER_CODE" elementPath="/root1/RECONCILIATION_REPORT__PROVIDER_CODE/"/>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="PROVIDER_NAME" elementPath="/root1/RECONCILIATION_REPORT__PROVIDER_NAME/"/>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="INVOICE_NUMBER" elementPath="/root1/RECONCILIATION_REPORT__INVOICE_NUMBER/"/>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="INVOICE_DATE" elementPath="/root1/RECONCILIATION_REPORT__INVOICE_DATE/"/>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="LOG_NUMBER" elementPath="/root1/RECONCILIATION_REPORT__LOG_NUMBER/"/>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="AIA_DIAGNOSIS_CODE" elementPath="/root1/RECONCILIATION_REPORT__AIA_DIAGNOSIS_CODE/"/>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="BILLING_ITEM_GROUPING_CODE" elementPath="/root1/RECONCILIATION_REPORT__BILLING_ITEM_GROUPING_CODE/"/>
+            <outputMapElement isOutputMapping="true" tableName="RECONCILIATION_REPORT" columnName="PAYABLE_AMOUNT" elementPath="/root1/RECONCILIATION_REPORT__PAYABLE_AMOUNT/"/>
+         </outputMapElements>
+         <inputMapElements>
+            <inputMapElement tableName="RECONCILIATION_REPORT" columnName="PROVIDER_CODE" elementPath="/root/ProviderCode/"/>
+            <inputMapElement tableName="RECONCILIATION_REPORT" columnName="OVERALL_STATUS" elementPath="/root/OverallStatus/"/>
+         </inputMapElements>
+      </mapping>
+   </mappings>
+</databaseMap>

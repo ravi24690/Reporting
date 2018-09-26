@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemaView xmlns="http://www.axway.com/mappingServices/schemaView" identifierQuoteString="&quot;" stringFunctions="USER" connection="Oracle" numericFunctions="ABS,ACOS,ASIN,ATAN,ATAN2,CEILING,COS,EXP,FLOOR,LOG,LOG10,MOD,PI,POWER,ROUND,SIGN,SIN,SQRT,TAN,TRUNCATE" timeDateFunctions="CURRENT_DATE,CURRENT_TIMESTAMP,CURDATE,EXTRACT,HOUR,MINUTE,MONTH,SECOND,YEAR">
+   <tables>
+      <table catalog="%" name="RECONILIATION_REPORT" type="TABLE" schema="ABHI">
+         <columns>
+            <column typeId="12" name="CLAIM_FILENAME" primaryKeyType="NONE" databaseType="ORACLE" precision="50" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="DATE_TIME_PROCESSED" primaryKeyType="NONE" databaseType="ORACLE" precision="20" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="INVOICE_NUMBER" primaryKeyType="NONE" databaseType="ORACLE" precision="20" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="INVOICE_DATE" primaryKeyType="NONE" databaseType="ORACLE" precision="20" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="GL_NO" primaryKeyType="NONE" databaseType="ORACLE" precision="20" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="CLAIM" primaryKeyType="NONE" databaseType="ORACLE" precision="50" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="DIAGNOSIS" primaryKeyType="NONE" databaseType="ORACLE" precision="50" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="DETAILS" primaryKeyType="NONE" databaseType="ORACLE" precision="50" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="IMAGE" primaryKeyType="NONE" databaseType="ORACLE" precision="50" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+            <column typeId="12" name="OVERALL_STATUS" primaryKeyType="NONE" databaseType="ORACLE" precision="10" nullable="true" typeName="VARCHAR2" tableName="RECONILIATION_REPORT"/>
+         </columns>
+      </table>
+   </tables>
+</schemaView>

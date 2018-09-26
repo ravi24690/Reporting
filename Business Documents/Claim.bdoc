@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" encodingBD="iso8859" keepDecimalSeparator="true" id="c0274763-9f8e-4a4c-8d54-ca26a5d6c385" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true" parentBDDelimiter="3">
+   <signature appVersion="3.1.2" lastUpdatedOn="25/09/2018 17:35:40 +0530"/>
+   <childElements>
+      <childElement factoryType="FlatFileParent" order="1" name="ProviderCode" parentDelimiterElement="3" hash="293643400">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" paddingCharElement=" " name="Code" leafDelimiterElement="2" paddingPosElement="1" order="2" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1722188068" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="3" name="ProviderName" parentDelimiterElement="3" hash="-328257378">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" paddingCharElement=" " name="Name" leafDelimiterElement="2" paddingPosElement="1" order="4" keepDecimalSeparator="true" encodingElement="iso8859" hash="1544217917" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="5" name="DataSend" parentDelimiterElement="3" hash="-1311877531">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" paddingCharElement=" " name="DataSend" leafDelimiterElement="2" paddingPosElement="1" order="6" keepDecimalSeparator="true" encodingElement="iso8859" hash="1571964527" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="7" name="VisitType" parentDelimiterElement="3" hash="-1378317109">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" paddingCharElement=" " name="VisitType" leafDelimiterElement="2" paddingPosElement="1" order="8" keepDecimalSeparator="true" encodingElement="iso8859" hash="-210296538" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="9" name="NextLine" parentDelimiterElement="3" hash="608868926">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" nullable="true" paddingCharElement=" " name="NextLine" leafDelimiterElement="2" paddingPosElement="1" order="10" keepDecimalSeparator="true" encodingElement="iso8859" hash="1830598889" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="11" name="ClaimHeader" parentDelimiterElement="3" hash="868790707">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="InvoiceNumber" leafDelimiterElement="2" paddingPosElement="1" order="12" keepDecimalSeparator="true" encodingElement="iso8859" hash="360212059" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="InvoiceDate" leafDelimiterElement="2" paddingPosElement="1" order="13" keepDecimalSeparator="true" encodingElement="iso8859" hash="280415973" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="TransactionType" leafDelimiterElement="2" paddingPosElement="1" order="14" keepDecimalSeparator="true" encodingElement="iso8859" hash="-560517865" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="Debit_CreditNoteNumber" leafDelimiterElement="2" paddingPosElement="1" order="15" keepDecimalSeparator="true" encodingElement="iso8859" hash="432427876" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="PatientName" leafDelimiterElement="2" paddingPosElement="1" order="16" keepDecimalSeparator="true" encodingElement="iso8859" hash="-299847699" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="PatientIC" leafDelimiterElement="2" paddingPosElement="1" order="17" keepDecimalSeparator="true" encodingElement="iso8859" hash="184553149" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="AdmissionDate" leafDelimiterElement="2" paddingPosElement="1" order="18" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1304391017" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="AdmissionTime" leafDelimiterElement="2" paddingPosElement="1" order="19" keepDecimalSeparator="true" encodingElement="iso8859" hash="-280142898" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="DischargedDate" leafDelimiterElement="2" paddingPosElement="1" order="20" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1985895045" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="DischargedTime" leafDelimiterElement="2" paddingPosElement="1" order="21" keepDecimalSeparator="true" encodingElement="iso8859" hash="-693814436" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="LOGNumber" leafDelimiterElement="2" paddingPosElement="1" order="22" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1933902736" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="ClaimType_VisitType" leafDelimiterElement="2" paddingPosElement="1" order="23" keepDecimalSeparator="true" encodingElement="iso8859" hash="-395233297" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="TotalAmount" leafDelimiterElement="2" paddingPosElement="1" order="24" keepDecimalSeparator="true" encodingElement="iso8859" hash="-538056092" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="TotalDiscounted" leafDelimiterElement="2" paddingPosElement="1" order="25" keepDecimalSeparator="true" encodingElement="iso8859" hash="481354666" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="TotalTaxAmount" leafDelimiterElement="2" paddingPosElement="1" order="26" keepDecimalSeparator="true" encodingElement="iso8859" hash="-70936850" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="TotalPayableAmount" leafDelimiterElement="2" paddingPosElement="1" order="27" keepDecimalSeparator="true" encodingElement="iso8859" hash="742741318" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="RoundedOffValue" leafDelimiterElement="2" paddingPosElement="1" order="28" keepDecimalSeparator="true" encodingElement="iso8859" hash="1808708628" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" paddingCharElement=" " name="AmountToBePaid" leafDelimiterElement="2" paddingPosElement="1" order="29" keepDecimalSeparator="true" encodingElement="iso8859" hash="753244108" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" nullable="true" paddingCharElement=" " name="PatientPaidAmount" leafDelimiterElement="2" paddingPosElement="1" order="30" keepDecimalSeparator="true" encodingElement="iso8859" hash="1081986448" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="31" label="Root" name="Claim" parentDelimiterElement="3" hash="-873633354">
+         <cardinality/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="InvoiceNumber" leafDelimiterElement="2" paddingPosElement="1" order="32" keepDecimalSeparator="true" encodingElement="iso8859" hash="712082213" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="InvoiceDate" leafDelimiterElement="2" paddingPosElement="1" order="33" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1979994034" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="TransactionType" leafDelimiterElement="2" paddingPosElement="1" order="34" keepDecimalSeparator="true" encodingElement="iso8859" hash="-711148465" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="Debit_CreditNoteNumber" leafDelimiterElement="2" paddingPosElement="1" order="35" keepDecimalSeparator="true" encodingElement="iso8859" hash="-90339968" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="PatientName" leafDelimiterElement="2" paddingPosElement="1" order="36" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1103978769" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="PatientIC" leafDelimiterElement="2" paddingPosElement="1" order="37" keepDecimalSeparator="true" encodingElement="iso8859" hash="1409765897" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="AdmissionDate" leafDelimiterElement="2" paddingPosElement="1" order="38" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1498804658" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="AdmissionTime" leafDelimiterElement="2" paddingPosElement="1" order="39" keepDecimalSeparator="true" encodingElement="iso8859" hash="-322286964" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="DischargedDate" leafDelimiterElement="2" paddingPosElement="1" order="40" keepDecimalSeparator="true" encodingElement="iso8859" hash="-250394885" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="DischargedTime" leafDelimiterElement="2" paddingPosElement="1" order="41" keepDecimalSeparator="true" encodingElement="iso8859" hash="763094550" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="LOGNumber" leafDelimiterElement="2" paddingPosElement="1" order="42" keepDecimalSeparator="true" encodingElement="iso8859" hash="721624598" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="ClaimType_VisitType" leafDelimiterElement="2" paddingPosElement="1" order="43" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2010656479" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="TotalAmount" leafDelimiterElement="2" paddingPosElement="1" order="44" keepDecimalSeparator="true" encodingElement="iso8859" hash="355252855" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="TotalDiscounted" leafDelimiterElement="2" paddingPosElement="1" order="45" keepDecimalSeparator="true" encodingElement="iso8859" hash="825466238" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="TotalTaxAmount" leafDelimiterElement="2" paddingPosElement="1" order="46" keepDecimalSeparator="true" encodingElement="iso8859" hash="-874003495" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="TotalPayableAmount" leafDelimiterElement="2" paddingPosElement="1" order="47" keepDecimalSeparator="true" encodingElement="iso8859" hash="-293456175" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="RoundedOffValue" leafDelimiterElement="2" paddingPosElement="1" order="48" keepDecimalSeparator="true" encodingElement="iso8859" hash="-401996575" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x7C" nullable="true" paddingCharElement=" " name="AmountToBePaid" leafDelimiterElement="2" paddingPosElement="1" order="49" keepDecimalSeparator="true" encodingElement="iso8859" hash="761728333" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" nullable="true" paddingCharElement=" " name="PatientPaidAmount" leafDelimiterElement="2" paddingPosElement="1" order="50" keepDecimalSeparator="true" encodingElement="iso8859" hash="-998038833" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="51" name="NextLine" parentDelimiterElement="3" hash="-1479249198">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" nullable="true" paddingCharElement=" " name="NextLine" leafDelimiterElement="2" paddingPosElement="1" order="52" keepDecimalSeparator="true" encodingElement="iso8859" hash="1864766567" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="53" name="NoOfRecords" parentDelimiterElement="3" hash="1536461163">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0D 0x0A" paddingCharElement=" " name="NoOfRecords" leafDelimiterElement="2" paddingPosElement="1" order="54" keepDecimalSeparator="true" encodingElement="iso8859" hash="297360270" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+   <validationRules>
+      <validationRule name="Checking_Not_Null">
+         <dmlExpression><![CDATA[true]]></dmlExpression>
+      </validationRule>
+   </validationRules>
+</businessDocument>

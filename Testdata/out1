@@ -1,0 +1,14 @@
+Claim Filename;DateTime Processed;Invoice No.;Invoice Date;GL No. ;Claim;Diagnosis;Details;Image;Overall Status
+CAHPUC_20180802_01;09/26/2018;OPC-101872;29/01/2018;Not Found;Passed;Passed;Passed;Found;Passed
+CAHPUC_20180802_01;09/26/2018;OPC-101873;30/01/2018;Not Found;Passed;Passed;Failed: Mandatory field missing;Found;Failed
+CAHPUC_20180802_01;09/26/2018;OPC-101874;Invalid Date;Not Found;Invalid Date;Failed: Mandatory field missing;Failed: Mandatory field missing;Found;Failed
+CAHPUC_20180802_01;09/26/2018;OPC-101875;Invalid Date;Not Found;Invalid Date;Failed: Mandatory field missing;Invalid Date;Found;Failed
+CAHPUC_20180802_01;09/26/2018;OPC-101876;30/01/2018;Not Found;Failed: Mandatory field missing;Passed;Failed: Mandatory field missing;Found;Failed
+CAHPUC_20180802_01;09/26/2018;OPC-101877;30/01/2018;Not Found;Passed;Passed;Failed: Mandatory field missing;Found;Failed
+CAHPUC_20180802_01;09/26/2018;OPC-101878;29/01/2018;Not Found;Failed: Mandatory field missing;Passed;Failed: Mandatory field missing;Found;Failed
+CAHPUC_20180802_01;09/26/2018;OPC-101879;29/01/2018;Not Found;Passed;Passed;Failed: Mandatory field missing;Found;Failed
+CAHPUC_20180802_01;09/26/2018;Not Found;Invalid Date;Not Found;Invalid Date;Not Found;Not Found;Not Found;Failed
+Not Found;09/26/2018;OPC-101880;Invalid Date;Not Found;Not Found;Invalid Date;Not Found;Found;Failed
+Total Claims Received: 10
+Total Passed: 1
+Total Failed: 8

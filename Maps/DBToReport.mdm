@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="3a21dd37-970d-4308-a13c-1c4085f7ee27">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 21:13:20 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/Report.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/ReconciliationReport_Resultset.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="666424993" elementPath="/Header/Claim/">
+         <dmlExpression><![CDATA["Claim"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="324595711" elementPath="/Details/Overall_Status/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__OVERALL_STATUS, "Failed")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-755439494" elementPath="/Details/Details/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DETAILS_STATUS, "Not Found")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-352688798" elementPath="/NextLine/NextLine/">
+         <dmlExpression><![CDATA[""]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1827920986" elementPath="/Details/ClaimFilename/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__CLAIM_FILENAME, "Not Found" ) ]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1588253308" elementPath="/Details/InvoiceDate/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__INVOICE_DATE, "Not Found")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1203286924" elementPath="/Details/Diagnosis/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DIAGNOSIS_STATUS, "Not Found")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-409725213" elementPath="/Status/TotalFailed/">
+         <dmlExpression><![CDATA[%Count := 0;
+%i_Count := 0;
+loop ( count( in:\root1 ) )
+{
+	if in:\root1[ %Count ]\RECONCILIATION_REPORT__OVERALL_STATUS = "Failed" or isNullOrAbsent ( in:\root1[ %Count ]\RECONCILIATION_REPORT__OVERALL_STATUS ) then %i_Count := %i_Count + 1;
+	%Count := %Count + 1
+};
+"Total Failed: " + %i_Count]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2092808033" elementPath="/Details/">
+         <dmlExpression><![CDATA[for each in:\root1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1925099579" elementPath="/Header/Details/">
+         <dmlExpression><![CDATA["Details"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="826302369" elementPath="/Details/InvoiceNumber/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__INVOICE_NUMBER, "Not Found" )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1716699115" elementPath="/Header/DateTimeProcessed/">
+         <dmlExpression><![CDATA["DateTime Processed"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="686369588" elementPath="/Header/GL_Number/">
+         <dmlExpression><![CDATA["GL No. "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-746607681" elementPath="/NextLine/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1750198766" elementPath="/Status/TotalCount/">
+         <dmlExpression><![CDATA["Total Claims Received: " + count ( in:\root1 )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1279288384" elementPath="/Header/Diagnosis/">
+         <dmlExpression><![CDATA["Diagnosis"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-803584809" elementPath="/Details/DateTimeProcessed/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DATE_TIME_PROCESSED, "Not Found")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2109115553" elementPath="/Details/Claim/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__CLAIM_STATUS, "Not Found")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1255715024" elementPath="/Details/GL_Number/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__GL_NO, "Not Found")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-6351040" elementPath="/Status/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1608910968" elementPath="/Header/InvoiceDate/">
+         <dmlExpression><![CDATA["Invoice Date"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2059037321" elementPath="/Status/TotalPassed/">
+         <dmlExpression><![CDATA[%Count := 0;
+%i_Count := 0;
+loop ( count( in:\root1 ) )
+{
+	if in:\root1[ %Count ]\RECONCILIATION_REPORT__OVERALL_STATUS = "Passed" then %i_Count := %i_Count + 1;
+	%Count := %Count + 1
+};
+%s_FileName := in:\root1[1]\RECONCILIATION_REPORT__PROVIDER_CODE + "_Reconciliation_Report" +".csv" ;
+setAttribute("B2BXGISend_ProductionFilename",  %s_FileName  );
+"Total Passed: " + %i_Count]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-165940933" elementPath="/Header/Image/">
+         <dmlExpression><![CDATA["Image"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="65182773" elementPath="/Header/ClaimFilename/">
+         <dmlExpression><![CDATA["Claim Filename"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1633681295" elementPath="/Header/InvoiceNumber/">
+         <dmlExpression><![CDATA["Invoice No."]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="536364135" elementPath="/Details/Image/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__IMAGE_STATUS, "Not Found")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="318701532" elementPath="/Header/Overall_Status/">
+         <dmlExpression><![CDATA["Overall Status"]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

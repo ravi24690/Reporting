@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="5cc292d4-1d2e-41ad-a1a3-cf19d7bc2b04">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 17:33:06 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/XML_Export_where.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/DB_XML_Export_where.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-1559310546" elementPath="/root/novalue/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\novalue, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1603952549" elementPath="/root/">
+         <dmlExpression><![CDATA[for each in:\!where!\root]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

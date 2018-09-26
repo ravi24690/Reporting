@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemaView xmlns="http://www.axway.com/mappingServices/schemaView" identifierQuoteString="&quot;" stringFunctions="USER" connection="Oracle" numericFunctions="ABS,ACOS,ASIN,ATAN,ATAN2,CEILING,COS,EXP,FLOOR,LOG,LOG10,MOD,PI,POWER,ROUND,SIGN,SIN,SQRT,TAN,TRUNCATE" timeDateFunctions="CURRENT_DATE,CURRENT_TIMESTAMP,CURDATE,EXTRACT,HOUR,MINUTE,MONTH,SECOND,YEAR">
+   <tables>
+      <table catalog="%" name="TEST" type="TABLE" schema="PASSPORT">
+         <columns>
+            <column typeId="12" name="NAME" primaryKeyType="NONE" databaseType="ORACLE" precision="30" nullable="true" typeName="VARCHAR2" tableName="TEST"/>
+            <column typeId="12" name="COMPANY" primaryKeyType="NONE" databaseType="ORACLE" precision="30" nullable="true" typeName="VARCHAR2" tableName="TEST"/>
+         </columns>
+      </table>
+   </tables>
+</schemaView>

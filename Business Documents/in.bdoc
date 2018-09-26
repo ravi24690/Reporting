@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" truncateBD="true" encodingBD="iso8859" enableFixedFieldTruncation="true" keepDecimalSeparator="true" id="e62f9ae1-8e5e-4d3d-9fff-1418a09e7d8f" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="29/05/2018 13:58:54 +0530"/>
+   <childElements>
+      <childElement factoryType="FlatFileParent" order="1" label="Root" name="Root" parentDelimiterElement="3" hash="2082068696">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="100000" typeId="10" leafDelimiterElementValue="&lt;?xml" paddingCharElement=" " name="Leaf2" leafDelimiterElement="2" paddingPosElement="1" order="2" keepDecimalSeparator="true" encodingElement="utf8" hash="332430377" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="3" name="Parent3" parentDelimiterElement="3" hash="-667479726">
+         <cardinality/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="Leaf4" leafDelimiterElement="4" paddingPosElement="1" order="4" keepDecimalSeparator="true" encodingElement="utf8" hash="-1213382079" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="FlatFileParent" order="5" name="Parent5" parentDelimiterElement="3" hash="-497142339">
+         <cardinality/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="40" name="Leaf6" leafDelimiterElement="4" order="6" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1919387793" allowDistortion="true">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

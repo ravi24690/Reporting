@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="4973482d-1ece-45a1-b70f-f0532df5aa05">
+   <signature appVersion="3.1.2" lastUpdatedOn="25/09/2018 20:53:35 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/Test.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/Details.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1791523396" elementPath="/Root/InvoiceNumber/">
+         <dmlExpression><![CDATA[%s_InvoiceData := %s_InvoiceData + this\InvoiceNumber;
+this\InvoiceNumber]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-44734474" elementPath="/Root/ProviderName/">
+         <dmlExpression><![CDATA[in:\ProviderName\Name]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1610147818" elementPath="/Root/">
+         <dmlExpression><![CDATA[%s_InvoiceData := "Start";
+for each in:\Details [ where  not (index( %s_InvoiceData , item\InvoiceNumber , 1 ) > 0) ]]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

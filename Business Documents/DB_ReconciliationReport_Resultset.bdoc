@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/xmlBusinessDocument" id="cc00601f-beb2-4b91-a407-e0d34e8b4e34" keepDecimalSeparatorCharacter="true" keepDecimalSeparator="true" keepInputNumberFractionDigits="true" keepIntegerPlusSign="true" encodingBD="iso8859" keepInputNumberDateDigits="true" keepPlusSign="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 19:01:43 +0530"/>
+   <childElements>
+      <childElement factoryType="XmlProlog" order="1" name="Prolog" label="Prolog xml" hash="456056764">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="XmlLeaf" hash="-575043028" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" label="Version" keepDecimalSeparator="true" defaultValue="1.0" order="2" encodingElement="iso8859" name="XmlVersion">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="XmlLeaf" hash="1204272651" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" label="Encoding" nullable="true" keepDecimalSeparator="true" defaultValue="ISO-8859-1" order="3" encodingElement="iso8859" name="XmlEncoding">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="XmlLeaf" hash="1963750593" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" label="XmlVersion" nullable="true" keepDecimalSeparator="true" order="4" encodingElement="iso8859" name="XmlStandalone">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="XmlLeaf" hash="356724687" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" label="DocType" nullable="true" keepDecimalSeparator="true" order="5" encodingElement="iso8859" name="XmlDocType">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="XmlLeaf" hash="1775757172" typeId="10" definition="2000" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" label="Comments" nullable="true" keepDecimalSeparator="true" order="6" encodingElement="iso8859" name="XmlComments">
+               <cardinality/>
+            </childElement>
+            <childElement factoryType="XmlLeaf" hash="-1838437838" typeId="10" definition="2000" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" label="CommProcessInstants" nullable="true" keepDecimalSeparator="true" order="7" encodingElement="iso8859" name="XmlProcessInst">
+               <cardinality/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="XmlParent" order="8" label="Root" name="Resultset" xmlNamespace="-1" hash="1029963273">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="XmlSequence" order="9" name="Sequence" label="Sequence" hash="-1952503998">
+               <cardinality minimum="1" maximum="1"/>
+               <childElements>
+                  <childElement factoryType="XmlParent" order="10" name="root1" xmlNamespace="-1" hash="-1469449182">
+                     <cardinality minimum="1"/>
+                     <childElements>
+                        <childElement factoryType="XmlSequence" order="11" name="Sequence" label="Sequence" hash="-1021614402">
+                           <cardinality minimum="1" maximum="1"/>
+                           <childElements>
+                              <childElement factoryType="XmlLeaf" hash="136698841" typeId="10" definition="50" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="12" encodingElement="iso8859" name="RECONCILIATION_REPORT__PROVIDER_CODE">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-557312769" typeId="10" definition="100" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="13" encodingElement="iso8859" name="RECONCILIATION_REPORT__PROVIDER_NAME">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="1877691823" typeId="10" definition="20" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="14" encodingElement="iso8859" name="RECONCILIATION_REPORT__INVOICE_NUMBER">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-1553954153" typeId="10" definition="20" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="15" encodingElement="iso8859" name="RECONCILIATION_REPORT__INVOICE_DATE">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="1695453523" typeId="10" definition="50" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="16" encodingElement="iso8859" name="RECONCILIATION_REPORT__LOG_NUMBER">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="362651830" typeId="10" definition="10" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="17" encodingElement="iso8859" name="RECONCILIATION_REPORT__AIA_DIAGNOSIS_CODE">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-766894826" typeId="10" definition="200" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="18" encodingElement="iso8859" name="RECONCILIATION_REPORT__BILLING_ITEM_GROUPING_CODE">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="1514616525" typeId="10" definition="30" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="19" encodingElement="iso8859" name="RECONCILIATION_REPORT__PAYABLE_AMOUNT">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-351823624" typeId="10" definition="20" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="20" encodingElement="iso8859" name="RECONCILIATION_REPORT__DATE_TIME_PROCESSED">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="36323031" typeId="10" definition="50" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="21" encodingElement="iso8859" name="RECONCILIATION_REPORT__CLAIM_FILENAME">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-47559863" typeId="10" definition="20" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="22" encodingElement="iso8859" name="RECONCILIATION_REPORT__GL_NO">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-1672492035" typeId="10" definition="50" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="23" encodingElement="iso8859" name="RECONCILIATION_REPORT__CLAIM_STATUS">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="1641333288" typeId="10" definition="50" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="24" encodingElement="iso8859" name="RECONCILIATION_REPORT__DIAGNOSIS_STATUS">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-1397540341" typeId="10" definition="50" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="25" encodingElement="iso8859" name="RECONCILIATION_REPORT__DETAILS_STATUS">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-776033649" typeId="10" definition="20" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="26" encodingElement="iso8859" name="RECONCILIATION_REPORT__IMAGE_STATUS">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                              <childElement factoryType="XmlLeaf" hash="-573831601" typeId="10" definition="20" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="27" encodingElement="iso8859" name="RECONCILIATION_REPORT__OVERALL_STATUS">
+                                 <cardinality maximum="1"/>
+                              </childElement>
+                           </childElements>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

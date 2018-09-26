@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="09262817-3863-471e-892e-ac508525ff0b">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 19:01:43 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/DB_ReconciliationReport_Resultset.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/ReconciliationReport_Resultset.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1514616525" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__PAYABLE_AMOUNT/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__PAYABLE_AMOUNT, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="136698841" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__PROVIDER_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__PROVIDER_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1397540341" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__DETAILS_STATUS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DETAILS_STATUS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-557312769" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__PROVIDER_NAME/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__PROVIDER_NAME, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-575043028" elementPath="/Prolog/XmlVersion/">
+         <dmlExpression><![CDATA["1.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1553954153" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__INVOICE_DATE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__INVOICE_DATE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-47559863" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__GL_NO/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__GL_NO, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="36323031" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__CLAIM_FILENAME/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__CLAIM_FILENAME, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1204272651" elementPath="/Prolog/XmlEncoding/">
+         <dmlExpression><![CDATA["UTF-8"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1469449182" elementPath="/Resultset/S#1/root1/">
+         <dmlExpression><![CDATA[for each in:\root1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1641333288" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__DIAGNOSIS_STATUS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DIAGNOSIS_STATUS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1672492035" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__CLAIM_STATUS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__CLAIM_STATUS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-351823624" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__DATE_TIME_PROCESSED/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DATE_TIME_PROCESSED, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-573831601" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__OVERALL_STATUS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__OVERALL_STATUS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1877691823" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__INVOICE_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__INVOICE_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-766894826" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__BILLING_ITEM_GROUPING_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__BILLING_ITEM_GROUPING_CODE, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1695453523" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__LOG_NUMBER/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__LOG_NUMBER, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-776033649" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__IMAGE_STATUS/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__IMAGE_STATUS, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="362651830" elementPath="/Resultset/S#1/root1/S#1/RECONCILIATION_REPORT__AIA_DIAGNOSIS_CODE/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__AIA_DIAGNOSIS_CODE, absent )]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

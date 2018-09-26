@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemaView xmlns="http://www.axway.com/mappingServices/schemaView" identifierQuoteString="&quot;" stringFunctions="USER" connection="Oracle" numericFunctions="ABS,ACOS,ASIN,ATAN,ATAN2,CEILING,COS,EXP,FLOOR,LOG,LOG10,MOD,PI,POWER,ROUND,SIGN,SIN,SQRT,TAN,TRUNCATE" timeDateFunctions="CURRENT_DATE,CURRENT_TIMESTAMP,CURDATE,EXTRACT,HOUR,MINUTE,MONTH,SECOND,YEAR">
+   <tables>
+      <table catalog="%" name="PURGE_PAK.MESSAGEPURGE" type="STORED_PROCEDURE" schema="B2BI_LINUX">
+         <columns>
+            <column typeId="3" name="P_EXPIRATIONTIME" primaryKeyType="NONE" databaseType="ORACLE" precision="22" nullable="true" typeName="NUMBER" tableName="PURGE_PAK.MESSAGEPURGE"/>
+            <column typeId="3" name="P_MAXRUNTIME" primaryKeyType="NONE" databaseType="ORACLE" precision="22" nullable="true" typeName="NUMBER" tableName="PURGE_PAK.MESSAGEPURGE"/>
+            <column typeId="3" name="P_CHUNKSIZE" primaryKeyType="NONE" databaseType="ORACLE" precision="22" nullable="true" typeName="NUMBER" tableName="PURGE_PAK.MESSAGEPURGE"/>
+            <column typeId="1111" name="P_RETURN" primaryKeyType="NONE" databaseType="ORACLE" nullable="true" typeName="REF CURSOR" tableName="PURGE_PAK.MESSAGEPURGE"/>
+         </columns>
+      </table>
+   </tables>
+</schemaView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flow xmlns="http://www.axway.com/mappingServices/flow" id="fdc8e3be-06e7-4546-8819-ec0393b20ef5">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 19:09:57 +0530"/>
+   <channelLinks>
+      <channelLink name="Link1" hash="9350a738-e931-487e-af3f-0b33a79ad8a8" virtual="true">
+         <source ref="972f7f81-909b-4682-9b47-07766d96f5bf"/>
+         <target ref="5b0f8d6e-9233-48cd-a8cc-eddbad310e68"/>
+      </channelLink>
+   </channelLinks>
+   <channels>
+      <channel name="DatabaseChannel" hash="5b0f8d6e-9233-48cd-a8cc-eddbad310e68">
+         <ChannelType>
+            <![CDATA[DATABASE]]>
+         </ChannelType>
+      </channel>
+   </channels>
+   <configurationParameters>
+      <configurationParameter name="checkInputFacet" value="true"/>
+      <configurationParameter name="stopOnFirstInputFacetCheckError" value="true"/>
+      <configurationParameter name="checkInputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstInputCheckConstraintsError" value="true"/>
+      <configurationParameter name="checkOutputFacet" value="false"/>
+      <configurationParameter name="stopOnFirstOutputFacetCheckError" value="true"/>
+      <configurationParameter name="checkOutputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstOutputCheckConstraintsError" value="true"/>
+      <configurationParameter name="continueMessageProcessingOnError" value="false"/>
+      <configurationParameter name="groupAllResultingInstances" value="false"/>
+      <configurationParameter name="keepExactValue" value="false"/>
+      <configurationParameter name="copyAllAttributes" value="true"/>
+   </configurationParameters>
+   <graphLinks>
+      <graphLink factoryType="FlowMainLink" name="FlowLink2" type="TYPE_INPUT" connectedObjectAlias="in" hash="06e8defa-340c-442e-86bf-f3017c1b8c38">
+         <source ref="ccc4bed9-5737-4b51-9b5c-332aa00efd35"/>
+         <target ref="972f7f81-909b-4682-9b47-07766d96f5bf"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink5" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="40902e01-d9f7-492c-990a-bbc7cd65333a">
+         <source ref="47f88ebb-c94d-455e-bc38-c7fc39066401"/>
+         <target ref="15a13111-c9dd-4666-8781-1abbc69fb139"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink7" type="TYPE_INPUT" connectedObjectAlias="in" hash="d8cea65a-efee-4c00-8df8-0662aa9248fb">
+         <source ref="33b62ea6-5441-4d2a-a990-8e228fda860a"/>
+         <target ref="877c82cd-7d25-4825-abd7-cdd2d7663abf"/>
+      </graphLink>
+      <graphLink name="Link1" hash="1f5187a7-5e00-4de6-a179-c6c7e7962ee4">
+         <source ref="c4e56e4c-ed33-4418-900c-7d1efe9b038e"/>
+         <target ref="33b62ea6-5441-4d2a-a990-8e228fda860a"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink1" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="7161208b-5e19-4d9d-8afa-1e80f9aebbdb">
+         <source ref="e5b056ab-8cee-4569-8f14-5ade2b6f1725"/>
+         <target ref="ccc4bed9-5737-4b51-9b5c-332aa00efd35"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink4" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="29308be1-1ede-4143-87fc-82b45a83cdf4">
+         <source ref="318a70c8-38ae-4c53-aa1c-4fb59c72a3b3"/>
+         <target ref="4a4e42b6-bcf7-4fc8-80b2-50484d7b8126"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink3" type="TYPE_INPUT" connectedObjectAlias="in" hash="a9cc1305-a25c-46a3-8752-d815c3c4d8f7">
+         <source ref="15a13111-c9dd-4666-8781-1abbc69fb139"/>
+         <target ref="92549263-4c47-4456-aafd-4d1f301b3404"/>
+      </graphLink>
+      <graphLink name="Link2" hash="9ade4494-4c4a-4d09-ab3a-84e03b76c51f">
+         <source ref="4a4e42b6-bcf7-4fc8-80b2-50484d7b8126"/>
+         <target ref="c862c78b-f233-4085-852d-b4ac9b8e554a"/>
+      </graphLink>
+   </graphLinks>
+   <graphNodes>
+      <graphNode factoryType="OutputEntity" name="out1" hash="c862c78b-f233-4085-852d-b4ac9b8e554a">
+         <bounds x="987" height="40" width="90" y="25"/>
+      </graphNode>
+      <graphNode factoryType="InputEntity" name="input1" hash="c4e56e4c-ed33-4418-900c-7d1efe9b038e">
+         <bounds height="40" width="90" y="30"/>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlockDatabase" name="ReconciliationReport" nameDisplayed="true" hash="972f7f81-909b-4682-9b47-07766d96f5bf">
+         <bounds x="469" height="100" width="139" y="3"/>
+         <channelLinks>
+            <channelLink ref="9350a738-e931-487e-af3f-0b33a79ad8a8"/>
+         </channelLinks>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionDatabaseMap" name="ReconciliationReport" nameDisplayed="true" mapName="~/Maps/ReconciliationReport.mdm" hash="47f88ebb-c94d-455e-bc38-c7fc39066401">
+               <bounds height="40" width="90" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="ReconciliationReport_where" hash="ccc4bed9-5737-4b51-9b5c-332aa00efd35">
+         <bounds x="364" height="40" width="90" y="25"/>
+         <documentName>~/Business Documents/ReconciliationReport_where.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="ReconciliationReport_Resultset" hash="15a13111-c9dd-4666-8781-1abbc69fb139">
+         <bounds x="623" height="40" width="90" y="25"/>
+         <documentName>~/Business Documents/ReconciliationReport_Resultset.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_ReconciliationReport1" nameDisplayed="true" hash="877c82cd-7d25-4825-abd7-cdd2d7663abf">
+         <bounds x="210" height="100" width="139" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionMap" name="TriggerToReport" nameDisplayed="true" mapName="~/Maps/TriggerToReport.mdm" hash="e5b056ab-8cee-4569-8f14-5ade2b6f1725">
+               <bounds height="40" width="90" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="Output_Trigger" hash="33b62ea6-5441-4d2a-a990-8e228fda860a">
+         <bounds x="105" height="40" width="90" y="30"/>
+         <documentName>~/Business Documents/Output_Trigger.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_ReconciliationReport2" nameDisplayed="true" hash="92549263-4c47-4456-aafd-4d1f301b3404">
+         <bounds x="728" height="100" width="139" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionMap" name="DBToReport" nameDisplayed="true" mapName="~/Maps/DBToReport.mdm" hash="318a70c8-38ae-4c53-aa1c-4fb59c72a3b3">
+               <bounds height="40" width="90" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="Report" hash="4a4e42b6-bcf7-4fc8-80b2-50484d7b8126">
+         <bounds x="882" height="40" width="90" y="25"/>
+         <documentName>~/Business Documents/Report.bdoc</documentName>
+      </graphNode>
+   </graphNodes>
+</flow>

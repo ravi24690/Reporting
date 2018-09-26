@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemaView xmlns="http://www.axway.com/mappingServices/schemaView" identifierQuoteString="&quot;" stringFunctions="USER" connection="Oracle" numericFunctions="ABS,ACOS,ASIN,ATAN,ATAN2,CEILING,COS,EXP,FLOOR,LOG,LOG10,MOD,PI,POWER,ROUND,SIGN,SIN,SQRT,TAN,TRUNCATE" timeDateFunctions="CURRENT_DATE,CURRENT_TIMESTAMP,CURDATE,EXTRACT,HOUR,MINUTE,MONTH,SECOND,YEAR"/>

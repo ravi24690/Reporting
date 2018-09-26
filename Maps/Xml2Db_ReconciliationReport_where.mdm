@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="74a28351-0b0d-43ed-a973-2fcb62a5db79">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 20:30:34 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/ReconciliationReport_where.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/DB_ReconciliationReport_where.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-1855881412" elementPath="/root/ProviderCode/">
+         <dmlExpression><![CDATA[this\ProviderCode]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-919233470" elementPath="/root/">
+         <dmlExpression><![CDATA[for each in:\!where!\root]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

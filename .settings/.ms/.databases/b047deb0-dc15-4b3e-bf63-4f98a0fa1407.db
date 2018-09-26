@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemaView xmlns="http://www.axway.com/mappingServices/schemaView" identifierQuoteString="&quot;" stringFunctions="USER" connection="Oracle" numericFunctions="ABS,ACOS,ASIN,ATAN,ATAN2,CEILING,COS,EXP,FLOOR,LOG,LOG10,MOD,PI,POWER,ROUND,SIGN,SIN,SQRT,TAN,TRUNCATE" timeDateFunctions="CURRENT_DATE,CURRENT_TIMESTAMP,CURDATE,EXTRACT,HOUR,MINUTE,MONTH,SECOND,YEAR">
+   <tables>
+      <table catalog="%" name="MIGRATION" type="TABLE" schema="PASSPORT">
+         <columns>
+            <column typeId="12" name="PARTNER_NAME" primaryKeyType="NONE" databaseType="ORACLE" precision="30" nullable="true" typeName="VARCHAR2" tableName="MIGRATION"/>
+            <column typeId="12" name="ROUTING_ID" primaryKeyType="NONE" databaseType="ORACLE" precision="30" nullable="true" typeName="VARCHAR2" tableName="MIGRATION"/>
+            <column typeId="12" name="CONTACT_NAME" primaryKeyType="NONE" databaseType="ORACLE" precision="30" nullable="true" typeName="VARCHAR2" tableName="MIGRATION"/>
+            <column typeId="12" name="PHONE" primaryKeyType="NONE" databaseType="ORACLE" precision="20" nullable="true" typeName="VARCHAR2" tableName="MIGRATION"/>
+            <column typeId="12" name="COMMUNITY" primaryKeyType="NONE" databaseType="ORACLE" precision="30" nullable="true" typeName="VARCHAR2" tableName="MIGRATION"/>
+         </columns>
+      </table>
+   </tables>
+</schemaView>
