@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://www.axway.com/mappingServices/project" createdBy="akesharwani" lastModifiedBy="akesharwani" checksumTest="true" creationDate="09/07/2018 11:13:38 +0530" engineType="DML" lastModifiedDate="26/09/2018 21:13:54 +0530" engineVersion="2.1">
+<project xmlns="http://www.axway.com/mappingServices/project" createdBy="akesharwani" lastModifiedBy="akesharwani" checksumTest="true" creationDate="09/07/2018 11:13:38 +0530" engineType="DML" lastModifiedDate="27/09/2018 21:05:27 +0530" engineVersion="2.1">
    <deploymentInformation>
       <deployment name="XML2DB_XML_Export" id="a239e387-d6aa-457c-b097-fa8169b6e319" port="6080" date="26/09/2018 14:37:12 +0530" user="akesharwani (admin)" projectType="DML-2.1" version="1" from="ITEM-S32255" host="10.151.14.55">
          <content>
@@ -62,6 +62,11 @@
          </content>
       </deployment>
       <deployment name="XML2DB_ReconciliationReport" id="82d2e8bd-2f19-4ee0-af2d-48791a7250e5" port="6080" date="26/09/2018 21:13:54 +0530" user="akesharwani (admin)" projectType="DML-2.1" version="7" from="ITEM-S32255" host="10.151.14.55">
+         <content>
+            <mapping>Mapping Flows/ReconciliationReport.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="XML2DB_ReconciliationReport" id="6fbb2cf7-a44b-44e7-b730-f749d2efaebb" port="6080" date="27/09/2018 21:05:27 +0530" user="akesharwani (admin)" projectType="DML-2.1" version="8" from="ITEM-S32255" host="10.151.14.55">
          <content>
             <mapping>Mapping Flows/ReconciliationReport.dmlflw</mapping>
          </content>

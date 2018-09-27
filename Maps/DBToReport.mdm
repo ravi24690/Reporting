@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="3a21dd37-970d-4308-a13c-1c4085f7ee27">
-   <signature appVersion="3.1.2" lastUpdatedOn="26/09/2018 21:13:20 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="27/09/2018 20:56:32 +0530"/>
    <outputBusinessDocument businessDocument="~/Business Documents/Report.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/ReconciliationReport_Resultset.bdoc" alias="in"/>
@@ -62,7 +62,7 @@ loop ( count( in:\root1 ) )
          <dmlExpression><![CDATA["Diagnosis"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-803584809" elementPath="/Details/DateTimeProcessed/">
-         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DATE_TIME_PROCESSED, "Not Found")]]></dmlExpression>
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__DATE_TIME_PROCESSED, absent)]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-2109115553" elementPath="/Details/Claim/">
          <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\RECONCILIATION_REPORT__CLAIM_STATUS, "Not Found")]]></dmlExpression>
